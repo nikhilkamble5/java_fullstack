@@ -1,0 +1,52 @@
+# ==========================
+# Eclipse
+# ==========================
+bin/
+.settings/
+.apt_generated/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# ==========================
+# IntelliJ IDEA
+# ==========================
+.idea/
+*.iml
+out/
+
+# ==========================
+# NetBeans
+# ==========================
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ==========================
+# Java Build Files
+# ==========================
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# Logs & Temp Files
+# ==========================
+*.log
+*.tmp
+
+# ==========================
+# Operating System Files
+# ==========================
+.DS_Store
+Thumbs.db
