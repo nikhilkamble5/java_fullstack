@@ -83,7 +83,7 @@ package core_java;
 
 
 //-------------------------
-class Fan{
+/*class Fan{
 String types;
 int noOfWings;
 float price;
@@ -113,38 +113,43 @@ public class Day2{
 		System.out.println("prices"+ f2.price);
 	}
 }
-//-------------------------
-
-/*class Fan
-{
-	String type;//Celing Wall Table
+*/
+//---------------------------
+//with Float price
+class Fan{
+	String types;
 	int noOfWings;
 	float price;
 }
-
 public class Day2{
-	public static void main(String[] args) {
-		Fan f1=new Fan() , f2=new Fan();
-		
-		f1.type="Wall";// 3 lac
+	public static void main(String[] args)  {
+
+		Fan f1= new Fan();
+		f1.types="Wall Fan";
 		f1.noOfWings=3;
-		f1.price=5600.6f;
-		
-		f2.type="Celing";// 3 lac
+		f1.price=2000.6f;
+
+		Fan f2= new Fan();
+		f2.types="Celling Fan";
 		f2.noOfWings=4;
-		f2.price=15600.6F;
-		
-		System.out.println("Fan 1 info"); // 3 lac
-		System.out.print("Type : "+f1.type);
-		System.out.print(" , Number Of Wings : "+f1.noOfWings);
-		System.out.println(" , Price : "+f1.price);
-		
-		System.out.println("Fan 2 info");// 3 lac
-		System.out.print("Type : "+f2.type);
-		System.out.print(" , Number Of Wings : "+f2.noOfWings);
-		System.out.println(" , Price : "+f2.price);
+		f2.price=3000.2f;
+
+		System.out.println("Fan 1 Info");
+		System.out.println("Type :"+f1.types);
+		System.out.println("Number of wings : "+f1.noOfWings);
+		System.out.println("Price :"+f2.price);
+		System.out.println();
+		System.out.println();
+		System.out.println("Fan 2 Info");
+		System.out.println("Types :"+ f2.types);
+		System.out.println("Number of wings :"+f2.noOfWings);
+		System.out.println("prices"+ f2.price);
 	}
-}*/
+}
+
+//-------------------------
+
+
 
 /*
 class Fan
