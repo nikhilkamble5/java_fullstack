@@ -81,38 +81,7 @@ package core_java;
 //Classes
 
 
-//class Fan
-//{
-//	String type;//Celing Wall Table
-//	int noOfWings;
-//	float price;
-//}
-//
-//public class Day2{
-//	public static void main(String[] args) {
-//		Fan f1=new Fan() , f2=new Fan();
-//		//f1 1002 type noOfWings price
-//		//f2 2002 type noOfWings price
-//
-//		f1.type="Wall";
-//		f1.noOfWings=3;
-//		f1.price=5600.6f;
-//
-//		f2.type="Celing";
-//		f2.noOfWings=4;
-//		f2.price=15600.6F;
-//
-//		System.out.println("Fan 1 info");
-//		System.out.println("Type : "+f1.type);
-//		System.out.println("Number Of Wings : "+f1.noOfWings);
-//		System.out.println("Price : "+f1.price);
-//
-//		System.out.println("Fan 2 info");
-//		System.out.println("Type : "+f2.type);
-//		System.out.println("Number Of Wings : "+f2.noOfWings);
-//		System.out.println("Price : "+f2.price);
-//	}
-//}
+
 //-------------------------
 class Fan{
 String types;
