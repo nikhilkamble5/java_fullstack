@@ -116,6 +116,7 @@ public class Day2{
 */
 //---------------------------
 //with Float price
+/*
 class Fan{
 	String types;
 	int noOfWings;
@@ -146,224 +147,43 @@ public class Day2{
 		System.out.println("prices"+ f2.price);
 	}
 }
-
+*/
 //-------------------------
 
+//using methid set and siplay method
 
+class Fan{
+    String type;
+    int noOfWIngs;
+    float price;
 
-/*
-class Fan
-{
-	String type;//Celing Wall Table
-	int noOfWings;
-	float price;
-	
-	//t now p => Local Variables
-	void setValues(String t,int now,float p)
-	{
-		type=t;
-		noOfWings=now;
-		price=p;
-	}
-	
-	void display()
-	{
-		System.out.print("Type : "+type);
-		System.out.print(" , Number Of Wings : "+noOfWings);
-		System.out.println(" , Price : "+price);
-	}
-}
-
-public class Day2{
-	public static void main(String[] args) {
-		Fan f1=new Fan() , f2=new Fan();
-		//f1 1002 type=Wall noOfWings=3 price=5600.6
-		//f2 2002 type=Celing noOfWings=4 price=15600.6
-	
-		f1.setValues("Wall", 3,5600.6f);//f1 current object
-		
-		f2.setValues("Celing", 4,15600.6f);//f2 current object
-		
-		System.out.println("Fan 1 info"); // 3 lac
-		display();
-		
-		System.out.println("Fan 2 info");// 3 lac
-		f2.display();
-	}
-}
-*/
-
-
-/*class Circle
-{
-	int radius;
-	double area;
-	
-	void setRadius(int r)
-	{
-		radius=r;
-	}
-	void calculateArea()
-	{
-		area = Math.PI * radius * radius;
-	}
-	void display()
-	{
-		System.out.print("Radius : " + radius);
-		System.out.println(" , Area : " + area);
-	}
-}
-
-class Rectangle
-{
-	int length,breadth;
-	int area;
-	void setSides(int l,int b)
-	{
-		length=l;
-		breadth=b;
-	}
-	void calculateArea()
-	{
-		area = length * breadth;
-	}
-	void display()
-	{
-		System.out.println("Length : " + length + " , Breadth : "+ breadth);
-		System.out.println("Area : " + area);
-	}
-}
-
-public class Day2{
-	public static void main(String[] args) {
-		Circle c1=new Circle();
-		//c1 radius=3 area
-		c1.setRadius(3);
-		c1.calculateArea();
-		c1.display();
-		
-		Rectangle r1=new Rectangle();//r1 length=10 breadth=20 area=200
-		r1.setSides(10, 20);
-		r1.calculateArea();
-		r1.display();
-	}
-}*/
-
-//Using classes Best Example class Student
-//After class Simple{} ; 
-// ; It is Optional
-
-/*class Student {
-    
-	int rollno;
-    String name;
-    float per;
-    
-    void setValues(int r,String n,float p){
-    	rollno =r;
-    	name=n;
-    	per=p;
+    void setValue(String t,int now, float p){
+        type=t;
+        noOfWIngs= now;
+        price=p;
     }
-    void display() {
-        System.out.print("Student Roll Number: " +rollno);
-        System.out.print(" , Name : " + name);
-        System.out.println(" Per : " + per);
+    void display(){
+        System.out.println("Type : "+type);
+        System.out.println("Number of WIngs :"+noOfWIngs);
+        System.out.println("Price: "+price);
     }
-  
-};
+}
+public class Day2{
+    public static void main(String[] args) {
+        Fan f1= new Fan(),f2 = new Fan();
 
- class Day2{
-	 public static void main(String[] args) {
+        //f1 1002 type=wall noofwings=3 price=6000.02
+        //f2 10003 type =ceing noofwings=4 price 4000.08
 
-	        Student s1 = new Student() , s2 = new Student();
+      f1.setValue("wall",3,5200.04F);
+      f2.setValue("celling",4,2300.02F);
 
-	        s1.setValues(101, "Nikhil", 77.88F);
-	        s2.setValues(102, "Shreyash", 67.88f);
-	        
-	        s1.display();
-	        s2.display();
-	    }
-}*/
-
-//javac Simple.java
-//		Simple.class Java Executable File 
-//		Byte Code  /  Class File / Java Executable File 
-
-//Q) Can you save a java source file by other name than the class name?
-// Yes
-
-//class Day2{}
-
-//Save Hard.java
-//javac Day10.java
-//		Day2.class
-//java Day2
-
-//1 Problem
-//public class Day2{}
-
-//Not Save Day10.java
-//Error 
-//Save Day2.java
-
-//1 File Can have 1 public class That class Should be main
-
-//Variable - Value Change
-
-//3 Types Of Variables
-//1] Instance Variable - Inside class & outside Method
-//2] Static Variable -  Inside class & outside Method but declared static 
-//						Not local
-//3] Local Variable  - inside method
-
-/*class Day2
-{
-	int iv=100;
-	static int sv=200;
-	
-	void show()
-	{
-		//static int sv1=200;//Error Static Chapter!!!
-		int lv=300;
-		System.out.println(lv);
-	}
-	
-	public static void main(String[] args) {
-		
-		Day2 d1=new Day2();
-		System.out.println(d1.iv);
-		
-		System.out.println(sv);
-		System.out.println(Day2.sv);
-		
-		d1.show();
-	}
-}*/
-
-//Any where condition if() else if() while() for( ; ; )
-//always java boolean otherwise throw error
-
-/*class Day2{
-
-	public static void main(String[] args) {
-		
-		boolean b=true;
-		System.out.println(b);
-		b=false;
-		System.out.println(b);
-		b=10>1;
-		System.out.println(b);
-		b=10<1;
-		System.out.println(b);
-		
-		if(10>1)//boolean true false 
-			System.out.println("Yes");
-		else
-			System.out.println("No");
-		System.out.println("R1");
-		
-		
-	}
-}*/
+        System.out.println("Fan 1 info");
+        f1.display();
+        System.out.println();
+        System.out.println("Fan2 infor");
+        f2.display();
 
 
+    }
+}
