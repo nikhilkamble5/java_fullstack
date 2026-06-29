@@ -189,32 +189,60 @@ public class Day2{
 //}
 
 
-class Circle{
-    int radius;
-    double area;
+//class Circle{
+//    int radius;
+//    double area;
+//
+//    void setRadius(int r){
+//        radius=r;
+//    }
+//    void calCulateArea(){
+//        area=Math.PI * radius * radius;
+//
+//    }
+//    void display(){
+//        System.out.print("Radius:"+radius);
+//        System.out.println(" , Area "+area);
+//    }
+//}
+//public class Day2{
+//    public static void main(String[] args){
+//        Circle c1= new Circle(),c2=new Circle();
+//        c1.setRadius(3);
+//        c1.calCulateArea();
+//        c1.display();
+//
+//        System.out.println();
+//        c2.setRadius(4);
+//        c2.calCulateArea();
+//        c2.display();
+//    }
+//}
 
-    void setRadius(int r){
-        radius=r;
-    }
-    void calCulateArea(){
-        area=Math.PI * radius * radius;
+class Reactangle{
+    int lenth,breadth;
+    int area;
+
+    void setSide(int l,int b){
+        lenth =l;
+        breadth=b;
 
     }
-    void display(){
-        System.out.print("Radius:"+radius);
-        System.out.println(" , Area "+area);
+    void calculateArea(){
+        area= lenth*breadth;
+
+    }
+    void displayArea(){
+        System.out.println("lenth :"+lenth+" bredth : "+breadth);
+        System.out.println("Area "+area);
     }
 }
-public class Day2{
-    public static void main(String[] args){
-        Circle c1= new Circle(),c2=new Circle();
-        c1.setRadius(3);
-        c1.calCulateArea();
-        c1.display();
+public class Day2 {
+    public static void main(String[] args) {
 
-        System.out.println();
-        c2.setRadius(4);
-        c2.calCulateArea();
-        c2.display();
+        Reactangle r1= new Reactangle();
+        r1.setSide(2, 4);
+        r1.calculateArea();
+        r1.displayArea();
     }
 }
