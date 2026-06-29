@@ -219,30 +219,57 @@ public class Day2{
 //    }
 //}
 
-class Reactangle{
-    int lenth,breadth;
-    int area;
+//class Reactangle{
+//    int lenth,breadth;
+//    int area;
+//
+//    void setSide(int l,int b){
+//        lenth =l;
+//        breadth=b;
+//
+//    }
+//    void calculateArea(){
+//        area= lenth*breadth;
+//
+//    }
+//    void displayArea(){
+//        System.out.println("lenth :"+lenth+" bredth : "+breadth);
+//        System.out.println("Area "+area);
+//    }
+//}
+//public class Day2 {
+//    public static void main(String[] args) {
+//
+//        Reactangle r1= new Reactangle();
+//        r1.setSide(2, 4);
+//        r1.calculateArea();
+//        r1.displayArea();
+//    }
+//}
 
-    void setSide(int l,int b){
-        lenth =l;
-        breadth=b;
+
+class Student {
+    String name;
+        int roll ;
+    float per;
+
+    void setValues(String n,int r , float p){
+        name=n;
+        roll=r;
+        per=p;
 
     }
-    void calculateArea(){
-        area= lenth*breadth;
+    void display(){
+        System.out.println("Student name is"+name);
+        System.out.println("Student roll is"+roll);
+        System.out.println("Student per is"+per);
+    }
+        }
 
-    }
-    void displayArea(){
-        System.out.println("lenth :"+lenth+" bredth : "+breadth);
-        System.out.println("Area "+area);
-    }
-}
-public class Day2 {
-    public static void main(String[] args) {
-
-        Reactangle r1= new Reactangle();
-        r1.setSide(2, 4);
-        r1.calculateArea();
-        r1.displayArea();
-    }
-}
+        public class Day2{
+            public static void main(String[] args) {
+                Student s=new Student();
+                s.setValues("Neymar ",11,60.30f);
+                s.display();
+            }
+        }
