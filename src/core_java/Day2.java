@@ -152,38 +152,69 @@ public class Day2{
 
 //using methid set and siplay method
 
-class Fan{
-    String type;
-    int noOfWIngs;
-    float price;
+//class Fan{
+//    String type;
+//    int noOfWIngs;
+//    float price;
+//
+//    void setValue(String t,int now, float p){
+//        type=t;
+//        noOfWIngs= now;
+//        price=p;
+//    }
+//    void display(){
+//        System.out.println("Type : "+type);
+//        System.out.println("Number of WIngs :"+noOfWIngs);
+//        System.out.println("Price: "+price);
+//    }
+//}
+//public class Day2{
+//    public static void main(String[] args) {
+//        Fan f1= new Fan(),f2 = new Fan();
+//
+//        //f1 1002 type=wall noofwings=3 price=6000.02
+//        //f2 10003 type =ceing noofwings=4 price 4000.08
+//
+//      f1.setValue("wall",3,5200.04F);
+//      f2.setValue("celling",4,2300.02F);
+//
+//        System.out.println("Fan 1 info");
+//        f1.display();
+//        System.out.println();
+//        System.out.println("Fan2 infor");
+//        f2.display();
+//
+//
+//    }
+//}
 
-    void setValue(String t,int now, float p){
-        type=t;
-        noOfWIngs= now;
-        price=p;
+
+class Circle{
+    int radius;
+    double area;
+
+    void setRadius(int r){
+        radius=r;
+    }
+    void calCulateArea(){
+        area=Math.PI * radius * radius;
+
     }
     void display(){
-        System.out.println("Type : "+type);
-        System.out.println("Number of WIngs :"+noOfWIngs);
-        System.out.println("Price: "+price);
+        System.out.print("Radius:"+radius);
+        System.out.println(" , Area "+area);
     }
 }
 public class Day2{
-    public static void main(String[] args) {
-        Fan f1= new Fan(),f2 = new Fan();
+    public static void main(String[] args){
+        Circle c1= new Circle(),c2=new Circle();
+        c1.setRadius(3);
+        c1.calCulateArea();
+        c1.display();
 
-        //f1 1002 type=wall noofwings=3 price=6000.02
-        //f2 10003 type =ceing noofwings=4 price 4000.08
-
-      f1.setValue("wall",3,5200.04F);
-      f2.setValue("celling",4,2300.02F);
-
-        System.out.println("Fan 1 info");
-        f1.display();
         System.out.println();
-        System.out.println("Fan2 infor");
-        f2.display();
-
-
+        c2.setRadius(4);
+        c2.calCulateArea();
+        c2.display();
     }
 }
